@@ -1,11 +1,11 @@
 variable "region" {
   type    = "string"
-  default = "us-east-1"
+  default = "ap-southeast-1"
 }
 variable "ami_id" {
   type = "map"
   default = {
-    us-east-1    = "ami-00dc79254d0461090"
+    ap-southeast-1    = "ami-00dc79254d0461090"
   }
 }
 variable "instance_type" {

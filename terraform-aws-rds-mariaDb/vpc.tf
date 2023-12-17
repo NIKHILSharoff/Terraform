@@ -25,7 +25,7 @@ resource "aws_internet_gateway" "gw" {
 
 
 resource "aws_subnet" "private_1" {
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-southeast-1a"
   vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = false
   cidr_block = "10.0.4.0/24"
@@ -35,7 +35,7 @@ resource "aws_subnet" "private_1" {
   }
 }
 resource "aws_subnet" "private_2" {
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-southeast-1b"
   vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = false
   cidr_block = "10.0.5.0/24"
@@ -45,7 +45,7 @@ resource "aws_subnet" "private_2" {
   }
 }
 resource "aws_subnet" "private_3" {
-  availability_zone = "us-east-1c"
+  availability_zone = "ap-southeast-1a"
   vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = false
   cidr_block = "10.0.6.0/24"
@@ -55,7 +55,7 @@ resource "aws_subnet" "private_3" {
   }
 }
 resource "aws_subnet" "public_1" {
-  availability_zone = "us-east-1a"
+  availability_zone = "ap-southeast-1a"
   vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
   cidr_block = "10.0.1.0/24"
@@ -66,7 +66,7 @@ resource "aws_subnet" "public_1" {
 }
 resource "aws_subnet" "public_2" {
   vpc_id     = aws_vpc.vpc_demo.id
-  availability_zone = "us-east-1b"
+  availability_zone = "ap-southeast-1b"
   map_public_ip_on_launch = true
   cidr_block = "10.0.2.0/24"
 
@@ -75,7 +75,7 @@ resource "aws_subnet" "public_2" {
   }
 }
 resource "aws_subnet" "public_3" {
-  availability_zone = "us-east-1c"
+  availability_zone = "ap-southeast-1a"
   vpc_id     = aws_vpc.vpc_demo.id
   map_public_ip_on_launch = true
   cidr_block = "10.0.3.0/24"
